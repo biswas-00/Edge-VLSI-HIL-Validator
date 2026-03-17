@@ -2,7 +2,7 @@ import serial
 import subprocess
 import time
 
-# Configuration based on your detected port
+# Configuration based on detected port
 PORT = '/dev/ttyACM0'
 BAUD = 115200
 
@@ -33,7 +33,7 @@ def main():
         print(f"--- 16-bit HIL Bridge Active on {PORT} ---")
         
         while True:
-            # Expecting 5 bytes: [Op, A_hi, A_lo, B_hi, B_lo]
+            # 5 bytes: [Op, A_hi, A_lo, B_hi, B_lo]
             if ser.in_waiting >= 5:
                 packet = ser.read(5)
                 op = packet[0]

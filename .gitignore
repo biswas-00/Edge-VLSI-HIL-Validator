@@ -1,0 +1,8 @@
+hil_sim
+*.vcd
+*.out
+*.vvp
+.pio/
+.vscode/
+__pycache__/
+*.mp4

@@ -17,7 +17,6 @@ module alu_tb;
 
     initial begin
         // Use macros passed from the Python bridge
-        // Note the backticks (`) before the macro names
         `ifdef VAL_A
             A = `VAL_A; 
             B = `VAL_B; 
